@@ -16,5 +16,6 @@ Access: 2026-03-30 15:49:25.870551270 +0000
 Modify: 2026-03-30 15:49:25.870551270 +0000
 Change: 2026-03-30 15:49:25.870551270 +0000
  Birth: 2026-03-30 15:49:25.870551270 +0000
-
+ echo "mi archivo" >test.txt This command creates or overwrites a file named test.txt with the content “my file”.
+stat test.txt It is used to view detailed information about a file (test.txt) in Linux.
 

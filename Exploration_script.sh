@@ -7,7 +7,7 @@
 # mount | grep Where each device is mounted
 # && Run the next command ONLY if the previous one was successful
 # -e Interpret special characters 
-
+# [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS" It is used to detect whether your system was booted in UEFI mode or BIOS mode.
 
 
 

@@ -8,6 +8,13 @@
 # && Run the next command ONLY if the previous one was successful
 # -e Interpret special characters 
 # [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS" It is used to detect whether your system was booted in UEFI mode or BIOS mode.
-
+ File: test.txt
+  Size: 11              Blocks: 8          IO Block: 4096   regular file
+Device: 7,4     Inode: 1572909     Links: 1
+Access: (0666/-rw-rw-rw-)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-03-30 15:49:25.870551270 +0000
+Modify: 2026-03-30 15:49:25.870551270 +0000
+Change: 2026-03-30 15:49:25.870551270 +0000
+ Birth: 2026-03-30 15:49:25.870551270 +0000
 
 

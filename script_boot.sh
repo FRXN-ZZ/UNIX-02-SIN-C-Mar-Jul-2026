@@ -6,7 +6,15 @@ ls -lai
 # l= list a=all i=inode
 ls -l -a -i
 # the same options but in a separate way
-
+ stat .
+File: .
+Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 7,4     Inode: 1573082     Links: 2
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-04-08 21:08:33.033413247 +0000
+Modify: 2026-04-08 21:08:31.806413295 +0000
+Change: 2026-04-08 21:08:31.806413295 +0000
+Birth: 2026-04-08 21:08:31.806413295 +0000
 stat .
 #This is like asking the directory you're currently in for its full ID.
 File: .
@@ -31,12 +39,3 @@ Change: 2026-04-08 21:08:31...
 #The last time the metadata
 Birth: 2026-04-08 21:08:31...
 #The exact date the directory was created.
- stat .
-File: .
-Size: 4096            Blocks: 8          IO Block: 4096   directory
-Device: 7,4     Inode: 1573082     Links: 2
-Access: (0777/drwxrwxrwx)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
-Access: 2026-04-08 21:08:33.033413247 +0000
-Modify: 2026-04-08 21:08:31.806413295 +0000
-Change: 2026-04-08 21:08:31.806413295 +0000
-Birth: 2026-04-08 21:08:31.806413295 +0000

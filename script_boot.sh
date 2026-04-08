@@ -39,3 +39,13 @@ Change: 2026-04-08 21:08:31...
 #The last time the metadata
 Birth: 2026-04-08 21:08:31...
 #The exact date the directory was created.
+
+#first commands
+# change directory to home directory from any location of my operative
+cd
+#change diretory to home directory using absolute route
+cd /home/codespace
+#change diretory to home directory using ~ shortcut
+cd ~
+# change directory to home directory using enviroment variable
+cd $HOME

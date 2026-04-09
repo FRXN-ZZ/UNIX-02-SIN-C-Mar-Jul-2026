@@ -49,3 +49,17 @@ cd /home/codespace
 cd ~
 # change directory to home directory using enviroment variable
 cd $HOME
+
+#second commands
+# Where am I?
+pwd
+# Who am I?
+whoami
+#when each file was modified
+ls -lt
+#command manual
+man ls
+#Displays the first five device files.
+ls /dev | head -5
+#Displays the last five device files.
+ls /dev | tail -5

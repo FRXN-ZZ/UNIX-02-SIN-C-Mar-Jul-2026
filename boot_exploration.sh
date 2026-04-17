@@ -21,3 +21,9 @@ ls -lah #Other short -rw-rw-rw-  1 codespace root        42 Apr 17 14:30 doc_cri
 -rw-rw-rw-  1 codespace root       625 Apr 17 14:30 mensaje_recibido.txt
 -rw-rw-rw-  1 codespace root      9.2K Apr 17 14:30 mi_llave_publica-asc
 -rw-rw-rw-  1 codespace root        43 Apr 17 14:30 prueba_final.txt
+mkdir -- -rf #Create a directory literally named -rf
+rmdir -- -rf #Deletes the directory named -rf
+
+ls --help #displays a comprehensive list of all the options you can use with the ls.
+ls --help #displays a comprehensive list of all the options you can use with the ls.
+man ls #Opens a full, paginated documentation file that explains everything about the ls command.

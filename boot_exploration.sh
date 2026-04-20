@@ -54,3 +54,4 @@ bash: /etc/archivo_protegido: Permission denied
 # It doesn't work because sudo only runs with the command next to it.
 echo "hola" | sudo tee /etc/archivo_protegido > /dev/null #The dev null is a black hole that does not appear on the screen.
 sudo sh -c 'echo "chao" >> /etc/archivo_protegido' #Running something as root opens a shell; everything in quotes is interpreted as that root shell.
+sudo -i # We temporarily entered a RUT session and to exit we typed exit

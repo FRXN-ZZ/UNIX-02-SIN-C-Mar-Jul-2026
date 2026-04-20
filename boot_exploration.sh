@@ -57,3 +57,13 @@ sudo sh -c 'echo "chao" >> /etc/archivo_protegido' #Running something as root op
 sudo -i # We temporarily entered a RUT session and to exit we typed exit
 echo "$HOME" # prints only the variable
 echo "$BASH" #expands the variable and displays it in the directory
+echo 'echo "hola jose''' >> hola.sh #This command creates (or updates) the file.
+ls -l hola sh #This command is used to view the file attributes in detail.
+chmod +x hola.sh #This is the key command to make your script work like a program.
+is -l hola.sh #Displays updated permissions to confirm that the file is now executable
+cat hola.sh #This command is used to view the content.
+./hola.sh #This command executes the file.
+ls /etc #does not need it. Reading /etc is public.
+touch /etc/test.txt # yes, it needs it. /etc belongs to root and does not allow normal users to write to it.
+mkdir ~/my_folder # does not need it. ~ is your own home.
+apt install cowsay # yes, it needs it. Installing packages affects system directories (/usr/bin, etc.).

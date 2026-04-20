@@ -48,3 +48,9 @@ chmod +x script.sh          # everyone can execute it (equivalent to a+x)
 chmod u+x script.sh         # only the owner can execute it
 chmod o-r secret.txt        # remove read permission from "others"
 chmod u+rw,go-rwx private   # owner can read/write; no one else has any permissions
+
+sudo echo "hola" > /etc/archivo_protegido 
+bash: /etc/archivo_protegido: Permission denied
+# It doesn't work because sudo only runs with the command next to it.
+echo "hola" | sudo tee /etc/archivo_protegido > /dev/null #The dev null is a black hole that does not appear on the screen.
+sudo sh -c 'echo "chao" >> /etc/archivo_protegido' #Running something as root opens a shell; everything in quotes is interpreted as that root shell.

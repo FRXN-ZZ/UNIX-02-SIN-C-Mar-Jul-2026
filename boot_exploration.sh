@@ -55,3 +55,5 @@ bash: /etc/archivo_protegido: Permission denied
 echo "hola" | sudo tee /etc/archivo_protegido > /dev/null #The dev null is a black hole that does not appear on the screen.
 sudo sh -c 'echo "chao" >> /etc/archivo_protegido' #Running something as root opens a shell; everything in quotes is interpreted as that root shell.
 sudo -i # We temporarily entered a RUT session and to exit we typed exit
+echo "$HOME" # prints only the variable
+echo "$BASH" #expands the variable and displays it in the directory

@@ -1,4 +1,4 @@
-    1 git remote add upstream https://github.com/jonathanetitoo/UNIX-02-SIN-C-Mar-Jul-2026.git
+    1  git remote add upstream https://github.com/jonathanetitoo/UNIX-02-SIN-C-Mar-Jul-2026.git
     2  git fetch upstream
     3  git checkout -b eval_p2_1_g1 upstream/eval_p2_1_g1
     4  git push -u origin eval_p2_1_g1

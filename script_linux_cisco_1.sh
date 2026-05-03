@@ -29,3 +29,24 @@ aptitude -vvv moo
 # PRINT WORKING DIRECTORY 
 pwd
 # Description: Displays the full path of the current directory.
+
+# DIRECTORY NAVIGATION (cd)
+# Navigation using absolute and relative paths.
+# 1. Setup: Creating the directory structure shown in the course
+mkdir -p Documents/School/Art
+# 2. Relative Path: Move to 'Documents' from the current home directory
+cd Documents
+pwd
+# 3. Absolute Path: Move to the root directory
+cd /
+pwd
+# 4. Absolute Path: Return to the home directory using a full path
+cd /home/codespace
+# 5. Relative Path: Nested navigation
+cd Documents/School/Art
+pwd
+# 6. Step-by-step Navigation: Achieving the same result with multiple commands
+cd /home/codespace/Documents
+cd School
+cd Art
+pwd

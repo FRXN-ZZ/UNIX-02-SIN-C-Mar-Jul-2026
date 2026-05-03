@@ -13,3 +13,7 @@ ls -l
 # Description: Lists contents in long format
 ls -r
 # Description: Lists contents in reverse alphabetical order.
+
+# COMBINING OPTIONS
+ls -l -r OR ls -lr
+# Description: Long listing in reverse order.

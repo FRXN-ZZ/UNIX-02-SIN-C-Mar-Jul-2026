@@ -70,3 +70,17 @@ pwd
 cd ~
 pwd
 
+# FILE LISTING AND SORTING (ls)
+# Using 'ls' to list directory contents with various sorting options.
+# 1. Basic listing: List contents of the current directory
+ls
+# 2. Long listing: Show detailed information (permissions, owner, size, timestamp)
+ls -l /var/log/
+# 3. Sort by Time (-t): Show the newest files first
+ls -lt /var/log
+# 4. Sort by Size (-S): Show the largest files first
+ls -l -S /var/log
+# 5. Reverse Sort (-r): Invert the order (for exampol, smallest first or oldest first)
+ls -lSr /var/log
+# 6. Reverse Alphabetical: Basic listing in reverse order
+ls -r /var/log

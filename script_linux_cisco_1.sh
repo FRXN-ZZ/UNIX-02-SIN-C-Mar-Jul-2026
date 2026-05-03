@@ -17,3 +17,11 @@ ls -r
 # COMBINING OPTIONS
 ls -l -r OR ls -lr
 # Description: Long listing in reverse order.
+
+# MULTIPLE OPTIONS WITH ARGUMENTS
+aptitude -v moo
+# Description: Verbose easter egg response.
+aptitude -vv moo
+# Description: More verbose response.
+aptitude -vvv moo
+# Description: Even more verbose response 

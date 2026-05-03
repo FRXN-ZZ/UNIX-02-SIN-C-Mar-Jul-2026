@@ -50,3 +50,23 @@ cd /home/codespace/Documents
 cd School
 cd Art
 pwd
+
+# COMMAND LINE SHORTCUTS
+# Using shortcuts for parent, current, and home directories.
+
+# 1. Double Dot (..): Move to the parent directory
+# If we are in Art, this moves us up to School
+cd /home/codespace/Documents/School/Art
+cd ..
+pwd
+
+# 2. Single Dot (.): Represents the current directory
+# Often used with other commands, though less common with just 'cd'
+cd .
+pwd
+
+# 3. Tilde (~): Represents the user's home directory
+# Use it to return home instantly from anywhere
+cd ~
+pwd
+

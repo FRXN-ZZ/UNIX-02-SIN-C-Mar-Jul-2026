@@ -25,3 +25,7 @@ aptitude -vv moo
 # Description: More verbose response.
 aptitude -vvv moo
 # Description: Even more verbose response 
+
+# PRINT WORKING DIRECTORY 
+pwd
+# Description: Displays the full path of the current directory.

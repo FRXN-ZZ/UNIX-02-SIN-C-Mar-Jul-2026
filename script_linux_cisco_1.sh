@@ -84,3 +84,20 @@ ls -l -S /var/log
 ls -lSr /var/log
 # 6. Reverse Alphabetical: Basic listing in reverse order
 ls -r /var/log
+
+# ADMINISTRATIVE ACCESS (su and sudo)
+# Description: Switching to root user or executing commands with elevated privileges.
+# 1. Using 'su' to switch to root user (full shell login)
+# Use 'exit' to return to sysadmin account
+exit 
+# 2. Command 'sl' (Steam Locomotive) - requires privileges in the course
+sl 
+# 3. Running 'sl' as root using 'su'
+su -
+sl
+exit
+# 4. Using 'sudo' to run a single command with root privileges
+# Advantage: Does not change your current shell/user permanently.
+sudo sl
+# 5. Switching to another user with sudo -u
+sudo -u root sl

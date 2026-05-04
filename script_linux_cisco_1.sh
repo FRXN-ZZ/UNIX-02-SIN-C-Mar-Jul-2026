@@ -112,3 +112,21 @@ cd ~/Documents
 # 3. View detailed information and permissions of a specific file
 # The output format is: [Type][Owner Perms][Group Perms][Others Perms]
 ls -l hello.sh
+
+# CHANGING FILE PERMISSIONS (chmod) 
+# Using the symbolic method to change access modes.
+# 1. Navigate to the working directory
+cd ~/Documents
+# 2. Create the hello.sh script as seen in the course
+echo "echo 'Hello World!'" > hello.sh
+# 3. Check current permissions (Verify it lacks execute 'x' permission)
+ls -l hello.sh
+# 4. Attempt to run the script without execute permission (This will fail)
+./hello.sh || echo "Execution failed as expected: Permission denied"
+# 5. Grant execute permission to the owner (u) using the symbolic method (+)
+# Symbols used: u (user/owner), + (add), x (execute)
+chmod u+x hello.sh
+# 6. Verify the change in permissions
+ls -l hello.sh
+# 7. Run the script from the current directory using ./
+./hello.sh

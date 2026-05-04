@@ -130,3 +130,20 @@ chmod u+x hello.sh
 ls -l hello.sh
 # 7. Run the script from the current directory using ./
 ./hello.sh
+
+# CHANGING FILE OWNERSHIP (chown) 
+# Changing the owner of a file using 'chown'.
+# 1. Navigate to the Documents directory
+cd ~/Documents
+# 2. List all files to verify current ownership (usually sysadmin or codespace user)
+ls -l
+# 3. Change the owner of 'hello.sh' to 'root'
+# Administrative access (sudo) is required to change ownership.
+sudo chown root hello.sh
+# 4. Verify the owner change in the third column of the output
+ls -l hello.sh
+# 5. Try to execute the script as a regular user (This will fail now)
+# Since the owner is 'root' and permissions were 'u+x', only the owner (root) can execute it.
+./hello.sh || echo "Execution failed: Only the owner (now root) has execute permissions"
+# 6. Run the script using 'sudo' to act as the root user
+sudo ./hello.sh

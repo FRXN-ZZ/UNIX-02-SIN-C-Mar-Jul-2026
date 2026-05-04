@@ -101,3 +101,14 @@ exit
 sudo sl
 # 5. Switching to another user with sudo -u
 sudo -u root sl
+
+# FILE PERMISSIONS (ls -l)
+# Viewing and understanding file permissions, ownership, and types.
+# 1. Setup: Create a directory and a dummy script for practice
+mkdir -p ~/Documents
+echo "echo 'Hello!'" > ~/Documents/hello.sh
+# 2. Change directory to Documents
+cd ~/Documents
+# 3. View detailed information and permissions of a specific file
+# The output format is: [Type][Owner Perms][Group Perms][Others Perms]
+ls -l hello.sh

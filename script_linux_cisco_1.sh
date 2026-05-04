@@ -168,3 +168,14 @@ tail alpha.txt
 head -n 5 alpha.txt
 # Display the last 5 lines
 tail -n 5 alpha.txt
+
+# COPYING FILES (cp) 
+# Description: Copying files from one location to another.
+# 1. Navigate to the Documents directory
+cd ~/Documents
+# 2. Copy the system password file to the current directory
+# Syntax: cp [SOURCE] [DESTINATION]
+# The '.' represents the current working directory.
+cp /etc/passwd .
+# 3. List contents to verify the file was copied successfully
+ls

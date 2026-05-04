@@ -147,3 +147,24 @@ ls -l hello.sh
 ./hello.sh || echo "Execution failed: Only the owner (now root) has execute permissions"
 # 6. Run the script using 'sudo' to act as the root user
 sudo ./hello.sh
+
+# FILE VISUALIZATION COMMANDS 
+# 1. Setup: Create sample files to visualize
+cd ~/Documents
+printf "1 retriever\n2 badger\n3 bat\n4 wolf\n5 eagle\n" > animals.txt
+# Creating alpha.txt with 26 lines (A to Z) for testing head/tail
+echo {A..Z} | tr ' ' '\n' | awk '{print $1 " is for Something"}' > alpha.txt
+# 2. Use 'cat' to view small files
+# 'cat' (concatenate) displays the entire content of a file.
+cat animals.txt
+# 3. Use 'head' to view the top of a file
+# By default, 'head' shows the first 10 lines.
+head alpha.txt
+# 4. Use 'tail' to view the bottom of a file
+# By default, 'tail' shows the last 10 lines.
+tail alpha.txt
+# 5. Use the '-n' option to specify a custom number of lines
+# Display the first 5 lines
+head -n 5 alpha.txt
+# Display the last 5 lines
+tail -n 5 alpha.txt

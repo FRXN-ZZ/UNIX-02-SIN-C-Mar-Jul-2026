@@ -179,3 +179,9 @@ cd ~/Documents
 cp /etc/passwd .
 # 3. List contents to verify the file was copied successfully
 ls
+
+# PERMISSION REQUIREMENTS (Theory) 
+# To copy a file, you need:
+# - Execute (x) permission on the source directory.
+# - Read (r) permission on the file itself.
+# - Write (w) and Execute (x) permissions on the destination directory.

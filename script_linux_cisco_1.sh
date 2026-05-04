@@ -185,3 +185,16 @@ ls
 # - Execute (x) permission on the source directory.
 # - Read (r) permission on the file itself.
 # - Write (w) and Execute (x) permissions on the destination directory.
+
+# BIT-LEVEL COPYING AND DATA MANAGEMENT (dd)
+# Using 'dd' to copy files or partitions at the bit level.
+# 1. Return to the home directory
+cd ~
+# 2. Create a specific-sized file filled with binary zeros
+# This example creates a 50MB file named 'swapex' in /tmp.
+# Parameters:
+#   if: Input file.
+#   of: Output file.
+#   bs: Block size.
+#   count: Number of blocks to copy.
+dd if=/dev/zero of=/tmp/swapex bs=1M count=50

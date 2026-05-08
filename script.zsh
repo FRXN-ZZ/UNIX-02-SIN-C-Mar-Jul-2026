@@ -136,3 +136,24 @@ grep
 # OR operator in basic regular expressions.
 /etc/group 
 # Linux system file containing group information.
+usermod -aG desarolladores root
+usermod → Modifies an existing user account.
+-aG 
+# Adds the user to a supplementary group without removing existing group memberships.
+-a 
+# Append mode.
+-G 
+# Specifies supplementary groups.
+desarrolladores 
+# Name of the group.
+root 
+# Username being modified.
+usermod -aG diseno root
+usermod 
+# Modifies an existing user account.
+-aG 
+# Adds the user to an additional group without removing current groups.
+diseno 
+# Name of the group.
+root 
+# User being modified.

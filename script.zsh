@@ -39,3 +39,9 @@ groups
 # Displays the groups of a specific user.
 USER 
 # Replace with an actual username
+id -u
+# User ID
+id -g
+# principal group ID
+id -G
+#All the grups IDS

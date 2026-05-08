@@ -108,3 +108,31 @@ SYS_GID
 # OR operator used in basic regular expressions.
 /etc/login.defs 
 # Linux configuration file that defines account and group settings.
+addgroup diseno
+addgroup 
+# Creates a new group in Linux.
+diseno 
+# Name of the new group.
+addgroup --gid 2100 marketing
+addgroup 
+# Creates a new group.
+--gid 2100 
+# Assigns a specific Group ID (GID) to the group.
+marketing 
+# Name of the new group.
+addgroup --system cache_web
+addgroup 
+# Creates a new group.
+--system 
+# Creates a system group used by services or system processes.
+cache_web 
+# Name of the system group.
+grep "diseno\|marketing\|cache_web" /etc/group
+grep 
+# Searches for text patterns inside files.
+"diseno\|marketing\|cache_web" 
+# Searches for any of these group names.
+\| 
+# OR operator in basic regular expressions.
+/etc/group 
+# Linux system file containing group information.

@@ -45,3 +45,66 @@ id -g
 # principal group ID
 id -G
 #All the grups IDS
+mkdir ~/proyecto_unix/
+mkdir 
+# Creates a new directory.
+~/proyecto_unix/ 
+# Path to the new folder inside the current user’s home directory.
+ls -la ~/proyecto_unix/
+ls
+# Lists files and directories.
+-l 
+# Shows detailed information such as permissions, owner, size, and modification date.
+-a 
+# Includes hidden files and directories.
+~/proyecto_unix/ 
+# Directory being displayed.
+groupadd desarolladores
+groupadd 
+# Creates a new group in Linux.
+desarrolladores 
+# Name of the new group.
+groupadd -g 2000 operadores
+groupadd 
+# Creates a new group.
+-g 2000 
+# Assigns a specific Group ID (GID) to the group.
+operadores 
+# Name of the group.
+groupadd --system servicios_web
+groupadd 
+# Creates a new group.
+--system 
+# Creates a system group used by services or system processes.
+servicios_web 
+# Name of the system group.
+grep -E "desarolladores|operadores|servicios_web" /etc/group
+grep 
+# Searches for text patterns inside files.
+-E 
+# Enables extended regular expressions.
+"desarrolladores|operadores|servicios_web" 
+# Searches for any of these group names.
+| 
+# Means OR in the regular expression.
+/etc/group 
+# Linux system file containing group information.
+grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs
+GID_MIN                  1000
+GID_MAX                 60000
+#SYS_GID_MIN              101
+#SYS_GID_MAX              999
+SUB_GID_MIN                100000
+SUB_GID_MAX             600100000
+
+grep 
+# Searches for specific text patterns inside a file.
+"GID_MIN\|GID_MAX\|SYS_GID" 
+# Looks for lines containing:
+GID_MIN
+GID_MAX
+SYS_GID
+\| 
+# OR operator used in basic regular expressions.
+/etc/login.defs 
+# Linux configuration file that defines account and group settings.

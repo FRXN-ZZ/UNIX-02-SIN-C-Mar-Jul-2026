@@ -20,3 +20,6 @@ cat
 # Sends the output of one command to the next command.
 head 
 # Shows only the first lines (10 by default).
+touch test.txt 
+ls- la
+# My files and directoris inherit the gid and vid

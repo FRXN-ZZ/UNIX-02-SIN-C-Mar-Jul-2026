@@ -230,3 +230,20 @@ drwxr-xr-x 5 root root           4096 may 11 14:58 ..
 -rw-r--r-- 1 root desarolladores    0 may 11 14:58 app.py
 -rw-r--r-- 1 root root              0 may 11 14:58 config.json
                                                                   
+# Change the multiple file group
+chgrp diseno ~/lab_chgrp/proyectos/config.json ~/lab_chgrp/reportes/informe.txt  
+
+ls -la ~/lab_chgrp/proyectos/  
+# It serves to verify that config.json now belongs to the design group.
+total 8
+drwxr-xr-x 2 root root           4096 may 11 14:58 .
+drwxr-xr-x 5 root root           4096 may 11 14:58 ..
+-rw-r--r-- 1 root desarolladores    0 may 11 14:58 app.py
+-rw-r--r-- 1 root diseno            0 may 11 14:58 config.json 
+
+ls -la ~/lab_chgrp/reportes/   
+# It allows you to verify that report.txt changed to the design group. 
+total 8
+drwxr-xr-x 2 root root   4096 may 11 14:59 .
+drwxr-xr-x 5 root root   4096 may 11 14:58 ..
+-rw-r--r-- 1 root diseno    0 may 11 14:59 informe.txt                                                       

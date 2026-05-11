@@ -157,3 +157,10 @@ diseno
 # Name of the group.
 root 
 # User being modified.
+grep "desarolladores\|diseno" /etc/group
+grep 
+# searches for text inside files.
+"desarolladores\|diseno" 
+# search pattern.
+/etc/group 
+# Linux system file that stores group information.

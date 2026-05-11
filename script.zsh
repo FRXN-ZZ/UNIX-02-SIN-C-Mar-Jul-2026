@@ -246,4 +246,19 @@ ls -la ~/lab_chgrp/reportes/
 total 8
 drwxr-xr-x 2 root root   4096 may 11 14:59 .
 drwxr-xr-x 5 root root   4096 may 11 14:58 ..
--rw-r--r-- 1 root diseno    0 may 11 14:59 informe.txt                                                       
+-rw-r--r-- 1 root diseno    0 may 11 14:59 informe.txt     
+
+# Recursively change an entire directory
+chgrp -R developers ~/lab_chgrp/scripts/
+chgrp` 
+# Changes the owning group.
+-R
+# Means recursive.
+developers
+# New group.
+~/lab_chgrp/scripts/
+# Target folder.
+# It is used to verify all permissions and groups within scripts/.
+ls -laR ~/lab_chgrp/scripts/
+# Verbose to see what changes
+chgrp -Rv design ~/lab_chgrp/reports/

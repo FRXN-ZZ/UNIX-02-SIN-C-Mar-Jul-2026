@@ -220,3 +220,13 @@ total 8
 drwxr-xr-x 2 root root 4096 may 11 14:59 .
 drwxr-xr-x 5 root root 4096 may 11 14:58 ..
 -rw-r--r-- 1 root root    0 may 11 14:59 informe.txt
+
+# Change the group of a file
+chgrp desarolladores ~/lab_chgrp/proyectos/app.py
+ls -la ~/lab_chgrp/proyectos/
+total 8
+drwxr-xr-x 2 root root           4096 may 11 14:58 .
+drwxr-xr-x 5 root root           4096 may 11 14:58 ..
+-rw-r--r-- 1 root desarolladores    0 may 11 14:58 app.py
+-rw-r--r-- 1 root root              0 may 11 14:58 config.json
+                                                                  

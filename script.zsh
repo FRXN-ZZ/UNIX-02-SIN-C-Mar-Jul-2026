@@ -164,3 +164,28 @@ grep
 # search pattern.
 /etc/group 
 # Linux system file that stores group information.
+adduser root marketing
+adduser 
+# command used to add users or modify group memberships (on some Linux distributions like Ubuntu/Debian).
+root 
+# the user being added.
+marketing 
+# grouthe group to which the user is added.
+groupadd grupo_temporal
+groupadd 
+# creates a new group in Linux.
+grupo_temporal 
+# the name of the new group.
+usermod -aG grupo_temporal root
+usermod 
+# modifies a user account.
+-a 
+# append (keep existing groups).
+-G 
+# supplementary groups.
+grupo_temporal 
+# group to add.
+root 
+# user being modified.
+usermod -G desarolladores root
+# If option "a" is not used, the child groups are removed.

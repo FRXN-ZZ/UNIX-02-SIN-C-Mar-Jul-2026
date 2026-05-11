@@ -197,3 +197,26 @@ touch ~/lab_chgrp/proyectos/app.py
 touch ~/lab_chgrp/proyectos/config.json
 touch ~/lab_chgrp/reportes/informe.txt
 touch ~/lab_chgrp/scripts/deploy.sh
+
+# View initial state - everyone has the user group
+ls -la ~/lab_chgrp/proyectos/
+total 8
+drwxr-xr-x 2 root root 4096 may 11 14:58 .
+drwxr-xr-x 5 root root 4096 may 11 14:58 ..
+-rw-r--r-- 1 root root    0 may 11 14:58 app.py
+-rw-r--r-- 1 root root    0 may 11 14:58 config.json
+ls 
+# lists files and directories.
+-l 
+# long format (shows permissions, owner, group, size, date, etc.).
+-a 
+# shows hidden files too (files starting with .).
+~/lab_chgrp/proyectos/ 
+# target directory.
+
+ls -la ~/lab_chgrp/reportes/
+# Shows detailed information about files inside the reportes directory.
+total 8
+drwxr-xr-x 2 root root 4096 may 11 14:59 .
+drwxr-xr-x 5 root root 4096 may 11 14:58 ..
+-rw-r--r-- 1 root root    0 may 11 14:59 informe.txt

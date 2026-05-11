@@ -191,3 +191,9 @@ usermod -G desarolladores root
 # If option "a" is not used, the child groups are removed.
 usermod -aG diseno,marketing,grupo_temporal root
 # return
+# prepare the practice setting
+mkdir -p ~/lab_chgrp/{proyectos,reportes,scripts}
+touch ~/lab_chgrp/proyectos/app.py
+touch ~/lab_chgrp/proyectos/config.json
+touch ~/lab_chgrp/reportes/informe.txt
+touch ~/lab_chgrp/scripts/deploy.sh

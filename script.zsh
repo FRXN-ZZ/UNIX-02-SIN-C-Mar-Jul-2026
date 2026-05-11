@@ -189,3 +189,5 @@ root
 # user being modified.
 usermod -G desarolladores root
 # If option "a" is not used, the child groups are removed.
+usermod -aG diseno,marketing,grupo_temporal root
+# return

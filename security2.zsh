@@ -39,3 +39,17 @@ echo $$
 touch ~/after_newgrp.txt
 # Lists the detailed attributes of the newly created file (permissions, owner, group, date)
 ls -la ~/after_newgrp.txt
+
+# Create a file inside the subshell
+touch ~/dentro_de_newgrp.txt
+ls -la ~/dentro_de_newgrp.txt
+# The group is now 'desarrolladores'
+# Create a directory
+mkdir -p ~/proyecto_dev/src
+ls -la ~/
+
+# newgrp creates a subshell – this can be proven
+echo "Current shell PID: $$"
+newgrp desarrolladores
+echo "PID inside newgrp: $$"
+# The PID is different – it is a child process

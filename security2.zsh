@@ -30,3 +30,12 @@ newgrp desarrolladores
 id -gn
 #Outputs a text confirmation showing the active group you just switched to.
 echo "New active group: $(id -gn)"
+
+# Displays the PID (Process ID) of the current shell
+# Useful to confirm that 'newgrp' spawned a new subshell (different PID than before)
+echo $$
+# Creates an empty file in the user's home directory to verify
+# that newly created files inherit 'desarrolladores' as the owning group
+touch ~/after_newgrp.txt
+# Lists the detailed attributes of the newly created file (permissions, owner, group, date)
+ls -la ~/after_newgrp.txt

@@ -8,7 +8,14 @@ ls -la ~/test_inherited_group.txt
 
 # Show the current group
 id -gn
-
+echo "Current group: $(id -gn)"
 # Create a file before using newgrp
+touch ~/before_newgrp.txt
+ls -la ~/before_newgrp.txt
+
+# Show the current group
+id -gn
+echo "Current group: $(id -gn)"
+# Create a file before newgrp
 touch ~/before_newgrp.txt
 ls -la ~/before_newgrp.txt

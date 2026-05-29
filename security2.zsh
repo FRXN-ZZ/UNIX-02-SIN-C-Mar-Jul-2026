@@ -19,3 +19,14 @@ echo "Current group: $(id -gn)"
 # Create a file before newgrp
 touch ~/before_newgrp.txt
 ls -la ~/before_newgrp.txt
+
+#Installs additional essential system utilities for Linux (such as extra multi-user administration tools).
+apt install util-linux-extra 
+#Creates a new system group named desarrolladores (developers).
+groupadd desarrolladores
+#Switches your current shell session's primary group to desarrolladores.
+newgrp desarrolladores 
+#Prints the name of your newly active primary group.
+id -gn
+#Outputs a text confirmation showing the active group you just switched to.
+echo "New active group: $(id -gn)"

@@ -1,3 +1,5 @@
+#!/bin/bash
+#!/user/bin/env bash
 bash --version
 env
 echo ${SHELL}

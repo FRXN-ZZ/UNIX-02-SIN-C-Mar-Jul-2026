@@ -1,2 +1,2 @@
 #!/bin/bash
-#!/user/bin/env bas
+ls -l / | grep "bin"

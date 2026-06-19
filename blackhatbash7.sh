@@ -34,3 +34,12 @@ awk '{print $7}' log.txt
 #Searches for lines in `log.txt` that contain either `35.237.4.214` OR `13.66.139.0` using an escaped pipe (`\|`) as an OR operator.
 grep "42.236.10.117" log.txt | awk '{print $7}'
 #Performs the exact same search as Command 2 (IP 1 OR IP 2), but uses multiple `-e` flags for a cleaner and more readable syntax.
+
+sed 's/Mozilla/Godzilla/g' log.txt
+sed 's/Mozilla/Godzilla/g' log.txt > newlog.txt
+sed 's/ //g' log.txt
+sed '1d' log.txt
+sed '$d' log.txt
+sed '5,7d' log.txt
+sed -n '2,15 p' log.txt
+sed -i '1d' log.txt

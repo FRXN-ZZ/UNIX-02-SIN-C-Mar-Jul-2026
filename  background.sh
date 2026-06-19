@@ -6,5 +6,6 @@ sleep 60 &
 echo "Creating the file test123" 
 touch test123 
 # Deletes a file 
+sleep 60
 echo "Deleting the file test123" 
 rm test123

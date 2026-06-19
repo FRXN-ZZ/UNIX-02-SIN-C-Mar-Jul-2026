@@ -12,9 +12,9 @@ print_name
 
 echo "Variable \${name} will not be printed because it is a local variable."
 
-1. WHAT'S THE DIFFERENCE BETWEEN GLOBAL AND LOCAL VARIABLES?
+# 1. WHAT'S THE DIFFERENCE BETWEEN GLOBAL AND LOCAL VARIABLES?
 # • Global Variables: These are available to the entire program from anywhere. 
-#   For example, 'PUBLISHER' below can be accessed inside or outside functions.
+#   For example, PUBLISHER' below can be accessed inside or outside functions.
 # • Local Variables: These are locked down. By using the 'local' keyword, you restrict 
 #   the variable so it's only accessible from within that specific block of code. 
 #   If you try to call a local variable outside its function, it just returns empty 

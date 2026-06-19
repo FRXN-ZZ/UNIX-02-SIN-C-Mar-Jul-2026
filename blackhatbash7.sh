@@ -23,3 +23,14 @@ hola1,chao1
 hola2,chao2      
 hola3,chao3     
 EOF
+
+head log.txt
+awk 'NR < 10' log.txt
+
+#...................................
+grep "42.236.10.117" log.txt
+#Searches for and displays every line in `log.txt` that contains the IP address `35.237.4.214`.
+awk '{print $7}' log.txt
+#Searches for lines in `log.txt` that contain either `35.237.4.214` OR `13.66.139.0` using an escaped pipe (`\|`) as an OR operator.
+grep "42.236.10.117" log.txt | awk '{print $7}'
+#Performs the exact same search as Command 2 (IP 1 OR IP 2), but uses multiple `-e` flags for a cleaner and more readable syntax.
